@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px red solid; */
+}
+header {
+  background-color: #fff9f1;
+  border-top: 10px #f83181 solid;
+  padding: 10px;
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  width: 100%;
+}
+.contenedor_redes {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iconos_redes {
+  font-size: 35px;
+  color: #333;
+  transition: all 0.5s;
+}
+.iconos_redes:hover {
+  color: #f83181;
+}
+.contenedor_cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  border: 3px #333 solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.5s;
+  /* border: 1px red solid; */
+}
+nav a:hover {
+  color: #f83181;
+}
+nav a:nth-child(4) {
+  border-bottom: 0px;
+}
+.contenedor_promociones {
+  background-image: url(imagenes/fondopiedras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.infopromo {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.infopromo h1 {
+  font-size: 35px;
+  line-height: 35px;
+}
+.infopromo p {
+  font-size: 20px;
+}
+.btn_rosado {
+  border: 1px #f83181 solid;
+  background-color: #f83181;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.btn_borderosado {
+  border: 1px #f83181 solid;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+}
+.contenedor_info_productos {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.contenedor_info_productos article {
+  width: 45%;
+}
+.contenedor_info_productos h2 {
+  font-size: 22px;
+  padding: 20px 0px;
+}
+.contenedor_info_productos p {
+  line-height: 30px;
+  padding-top: 10px;
+}
+.contenedor_info_productos figure {
+  width: 50%;
+}
+.contenedor_info_productos figure img {
+  width: 100%;
+}
+.contenedor_talento {
+  background-color: #fff9f1;
+  padding: 20px;
+}
+.contenedor_talento h2 {
+  padding: 10px;
+  text-align: center;
+}
+.contenedor_puestos {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contenedor_puestos figure {
+  width: 48%;
+}
+.contenedor_puestos figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+.infopuestos {
+  width: 48%;
+}
+.contenedor_servicios {
+  background-color: #fff9f1;
+}
+.info_servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+}
+.info_servicios article {
+  background-color: #ffe8a4;
+  max-width: 350px;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+.info_servicios figure {
+  max-width: 150px;
+  margin: auto;
+}
+.info_servicios figure img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px white solid;
+}
+.info_servicios p {
+  text-align: justify;
+}
+.info_servicios h3 {
+  font-size: 18px;
+}
+footer {
+  padding: 20px 15px;
+  text-align: center;
+  border-bottom: 10px #f83181 solid;
+}
+footer a {
+  text-decoration: none;
+  color: #f83181;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 768px) {
+  .contenedor_info_productos {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contenedor_info_productos article {
+    width: 95%;
+  }
+  .contenedor_info_productos figure {
+    width: 70%;
+  }
+  .contenedor_puestos {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .infopuestos {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .contenedor_puestos figure {
+    width: 70%;
+  }
+  .info_servicios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info_servicios article {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    border-bottom: 2px #333 dotted;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor_cabecera {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor_redes {
+    margin-bottom: 20px;
+  }
+  .infopromo h1 {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .infopromo p {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .contenedor_info_productos figure {
+    width: 95%;
+  }
+  .contenedor_info_productos h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .contenedor_puestos figure {
+    width: 100%;
+  }
+  .contenedor_talento h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .btn_rosado {
+    margin-bottom: 15px;
+  }
+}
